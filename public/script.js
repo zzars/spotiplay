@@ -58,7 +58,7 @@ function pause() {
 input.addEventListener("keydown", (e) => {
     if (e.key == "Enter" && !e.shiftKey) {
         e.preventDefault();
-        sendBtn.clcik();
+        sendBtn.click();
     };
 })
 
