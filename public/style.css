@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    margin-top: 10vh;
+    margin-top: 5vh;
     padding: 12px;
     border: 2px solid white;
     border-radius: 15px;
@@ -109,4 +109,5 @@ body {
     margin-top: 10px;
     text-align: center;
     width: max-content;
+    margin-bottom: 5vh;
 }
