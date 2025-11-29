@@ -43,6 +43,15 @@ body {
   margin-bottom: 7px;
 }
 
+#modeBtn {
+  font-size: 45px;
+  font-weight: bold;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+}
+
 #playBtn {
   font-size: 45px;
   font-weight: bold;
@@ -52,7 +61,9 @@ body {
   border: none;
   color: white;
   padding-right: 3px;
+  padding-leftt: 3px;
   border-right: 0.7px solid white;
+  border-leftt: 0.7px solid white;
 }
 
 #downBtn {
