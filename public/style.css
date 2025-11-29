@@ -1,0 +1,99 @@
+body {
+    font-family: "Arial", Sans-Serif;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    margin-top: 30vh;
+    padding: 12px;
+    border: 2px solid white;
+    border-radius: 15px;
+    position: relative;
+}
+
+#detail {
+    display: none;
+    margin-bottom: 15px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid white;
+}
+
+#title {
+  width: 100%;
+  text-align: center;
+}
+
+#artist {
+  width: 100%;
+  color: #525252;
+  text-align: center;
+  font-weight: bold;
+  transform: translateY(-15px);
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 7px;
+}
+
+#playBtn {
+  font-size: 45px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  padding-right: 3px;
+  border-right: 0.7px solid white;
+}
+
+#downBtn {
+  font-size: 45px;
+  font-weight: bold;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+}
+
+#detail img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+#inp {
+    width: 90%;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    background: none;
+    color: white;
+    outline: none;
+    text-align: left;
+    transition: 0.25s ease;
+    margin-bottom: 7px;
+}
+
+#sendBtn {
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.copyright {
+    color: #525252;
+    position: absolute;
+    top: 100%;
+    margin-top: 10px;
+    text-align: center;
+    width: max-content;
+}
