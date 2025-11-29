@@ -1,2 +1,2 @@
-# spotiplay
-Play or Download Spotify Music
+# Spotiplay
+Play or Download Spotify Music.
