@@ -55,11 +55,10 @@ function pause() {
   lucide.createIcons()
 }
 
-modeBtn.addeventListener("click", () => {
+modeBtn.addEventListener("click", () => {
     loopMode = !loopMode;
     modeBtn.style.background = loopMode ? "white" : "none";
     modeBtn.style.color = loopMode ? "black" : "white";
-    lucide.createIcons();
 })
 
 playBtn.addEventListener("click", () => {
