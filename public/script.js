@@ -13,11 +13,13 @@ const playBtn = document.getElementById("playBtn");
 const input = document.getElementById("inp");
 const sendBtn = document.getElementById("sendBtn");
 const downBtn = document.getElementById("downBtn");
+const modeBtn = document.getElementById("modeBtn");
 
 let nowUrl = null;
 const audio = new Audio();
 let isPlaying = false;
 let isLoading = false;
+let loopMode = false;
 
 audio.oncanplay = null;
 
@@ -52,6 +54,13 @@ function pause() {
   playBtn.innerHTML = `<i data-lucide="circle-play"></i>`
   lucide.createIcons()
 }
+
+modeBtn.addeventListener("click", () => {
+    loopMode = !loopMode;
+    modeBtn.style.background = loopMode ? "white" : "none";
+    modeBtn.style.color = loopMode ? "black" : "white";
+    lucide.createIcons();
+})
 
 playBtn.addEventListener("click", () => {
   if (isPlaying) {
@@ -94,3 +103,13 @@ sendBtn.addEventListener("click", async () => {
     lucide.createIcons()
   }
 });
+
+audio.addEventListener("ended", () => {
+    if (loopMode) {
+        audio.currentTime = 0;
+        audio.play();
+    } else {
+        isPlaying = false;
+        playBtn.innerHTML = `<i data-lucide="circle-play"></i>`;
+        lucide.createIcons();
+})
