@@ -55,6 +55,13 @@ function pause() {
   lucide.createIcons()
 }
 
+input.addEventListener("keydown", (e) => {
+    if (e.key == "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        sendBtn.clcik();
+    };
+})
+
 modeBtn.addEventListener("click", () => {
     loopMode = !loopMode;
     modeBtn.style.background = loopMode ? "white" : "none";
