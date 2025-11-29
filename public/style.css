@@ -50,6 +50,7 @@ body {
   background: none;
   border: none;
   color: white;
+  border-radius: 10px;
 }
 
 #playBtn {
@@ -73,6 +74,7 @@ body {
   background: none;
   border: none;
   color: white;
+  border-radius: 10px;
 }
 
 #detail img {
