@@ -111,4 +111,5 @@ audio.addEventListener("ended", () => {
         isPlaying = false;
         playBtn.innerHTML = `<i data-lucide="circle-play"></i>`;
         lucide.createIcons();
-})
+    };
+});
