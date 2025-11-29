@@ -5,6 +5,7 @@ async function reqlagu(title) {
     return a.json();
 }
 
+const webTitle = document.getElementById("webTitle");
 const detail = document.getElementById("detail");
 const coverImage = document.getElementById("cover");
 const titleMusic = document.getElementById("title");
@@ -91,6 +92,7 @@ sendBtn.addEventListener("click", async () => {
     coverImage.src = data.cover;
     titleMusic.textContent = data.title;
     artist.textContent = data.artist;
+    webTitle.textContent = `${data.title} | Spotiplay`
     audio.pause()
     nowUrl = data.download_url;
     detail.style.display = "block";
